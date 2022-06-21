@@ -1,0 +1,30 @@
+{
+    "routes": [
+        {
+            "path": "view/home/home_view.dart",
+            "name": "home",
+            "route_name": "homeViewRoute"
+        },
+        {
+            "path": "view/splash/splash_view.dart",
+            "name": "splash",
+            "route_name": "splashViewRoute"
+        },
+        {
+            "path": "view/category/category_view.dart",
+            "name": "category",
+            "route_name": "categoryViewRoute"
+        },
+        {
+            "path": "view/driver_detail/driver_detail_view.dart",
+            "name": "driver",
+            "route_name": "driverDetailViewRoute"
+        },
+        {
+            "path": "view/team_detail/team_detail_view.dart",
+            "name": "team",
+            "route_name": "teamDetailViewRoute"
+        }
+
+    ] 
+}
