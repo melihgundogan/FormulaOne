@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:formula_one_app/theme/theme.dart';
 import 'package:formula_one_app/utils/constants/router_constants.dart';
+
+import '../../utils/constants/image_constants.dart';
+
 
 class CategoryView extends StatelessWidget {
   const CategoryView({Key? key}) : super(key: key);
@@ -8,7 +12,7 @@ class CategoryView extends StatelessWidget {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: themeData.primaryColor,
       appBar: CustomAppBar(),
       body: Padding(
         padding: EdgeInsets.only(
@@ -16,7 +20,7 @@ class CategoryView extends StatelessWidget {
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
           Text(
             "Standings",
-            style: TextStyle(color: Colors.white, fontSize: 60),
+            style: themeData.textTheme.headline1,
           ),
           SizedBox(
             height: size.height * 0.02,
@@ -25,7 +29,7 @@ class CategoryView extends StatelessWidget {
               flex: 1,
               child: InkWell(
                 onTap: () {
-                  Navigator.pushNamed(context, driverDetailViewRoute);
+                  Navigator.pushNamed(context, driverStandingsViewRoute);
                 },
                 child: Container(
                   width: size.width,
@@ -41,8 +45,7 @@ class CategoryView extends StatelessWidget {
                         padding: EdgeInsets.only(
                             left: size.width * 0.025, top: size.height * 0.02),
                         child: Text('Drivers',
-                            style: TextStyle(
-                                fontSize: 45, fontWeight: FontWeight.bold)),
+                            style: themeData.textTheme.headline3),
                       ),
                       ClipRRect(
                         borderRadius: BorderRadius.only(
@@ -51,7 +54,7 @@ class CategoryView extends StatelessWidget {
                             topLeft: Radius.zero,
                             topRight: Radius.zero),
                         child: Image.asset(
-                          "assets/images/ic_drivers.jpg",
+                          ImagesString.driversImage,
                         ),
                       )
                     ],
@@ -65,7 +68,7 @@ class CategoryView extends StatelessWidget {
               flex: 1,
               child: InkWell(
                 onTap: () {
-                  Navigator.pushNamed(context, teamDetailViewRoute);
+                  Navigator.pushNamed(context, teamStandingsViewRoute);
                 },
                 child: Container(
                   width: size.width,
@@ -78,12 +81,11 @@ class CategoryView extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Padding(
-                        padding: EdgeInsets.only(
-                            left: size.width * 0.025, top: size.height * 0.02),
-                        child: Text('Constructors',
-                            style: TextStyle(
-                                fontSize: 45, fontWeight: FontWeight.bold)),
-                      ),
+                          padding: EdgeInsets.only(
+                              left: size.width * 0.025,
+                              top: size.height * 0.02),
+                          child: Text('Constructors',
+                              style: themeData.textTheme.headline3)),
                       ClipRRect(
                           borderRadius: BorderRadius.only(
                               bottomLeft: Radius.circular(25),
@@ -99,7 +101,7 @@ class CategoryView extends StatelessWidget {
                   ),
                 ),
               )),
-              SizedBox(
+          SizedBox(
             height: size.height * 0.01,
           ),
         ]),

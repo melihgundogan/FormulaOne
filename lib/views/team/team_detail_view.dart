@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class TeamDetailView extends StatelessWidget {
-  const TeamDetailView({Key? key}) : super(key: key);
+class TeamStandingsView extends StatelessWidget {
+  const TeamStandingsView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

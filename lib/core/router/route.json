@@ -16,14 +16,20 @@
             "route_name": "categoryViewRoute"
         },
         {
-            "path": "view/driver_detail/driver_detail_view.dart",
+            "path": "view/driver/driver_standings_view.dart",
             "name": "driver",
-            "route_name": "driverDetailViewRoute"
+            "route_name": "driverStandingsViewRoute"
         },
         {
-            "path": "view/team_detail/team_detail_view.dart",
+            "path": "view/team/team_standings_view.dart",
             "name": "team",
-            "route_name": "teamDetailViewRoute"
+            "route_name": "teamStandingsViewRoute"
+        },
+        {
+            "path": "view/driver/driver_detail/driver_detail_view.dart",
+            "name": "driver_detail",
+            "route_name": "driverDetailViewRoute"
+
         }
 
     ] 
