@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:formula_one_app/theme/theme.dart';
 import 'package:formula_one_app/utils/constants/router_constants.dart';
 
-import '../../utils/constants/image_constants.dart';
+import '../../utils/constants/assets_constants.dart';
 
 
 class CategoryView extends StatelessWidget {
@@ -48,13 +48,13 @@ class CategoryView extends StatelessWidget {
                             style: themeData.textTheme.headline3),
                       ),
                       ClipRRect(
-                        borderRadius: BorderRadius.only(
+                        borderRadius: const BorderRadius.only(
                             bottomLeft: Radius.circular(25),
                             bottomRight: Radius.circular(25),
                             topLeft: Radius.zero,
                             topRight: Radius.zero),
                         child: Image.asset(
-                          ImagesString.driversImage,
+                          ImagesConstant.driversImage,
                         ),
                       )
                     ],
@@ -87,7 +87,7 @@ class CategoryView extends StatelessWidget {
                           child: Text('Constructors',
                               style: themeData.textTheme.headline3)),
                       ClipRRect(
-                          borderRadius: BorderRadius.only(
+                          borderRadius: const BorderRadius.only(
                               bottomLeft: Radius.circular(25),
                               bottomRight: Radius.circular(25),
                               topLeft: Radius.zero,
@@ -109,6 +109,7 @@ class CategoryView extends StatelessWidget {
     );
   }
 
+  // ignore: non_constant_identifier_names
   AppBar CustomAppBar() {
     return AppBar(
       backgroundColor: Colors.transparent,

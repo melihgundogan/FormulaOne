@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:formula_one_app/theme/theme.dart';
 import 'package:formula_one_app/utils/constants/router_constants.dart';
 
-import '../../utils/constants/image_constants.dart';
+import '../../utils/constants/assets_constants.dart';
 
 class DriverStandingsView extends StatelessWidget {
   const DriverStandingsView({Key? key}) : super(key: key);
@@ -98,7 +98,7 @@ class DriverStandingsView extends StatelessWidget {
                                           borderRadius:
                                               BorderRadius.circular(25),
                                           child: Image.asset(
-                                            ImagesString.driversImage,
+                                            ImagesConstant.driversImage,
                                             fit: BoxFit.cover,
                                           )),
                                     ),
@@ -186,7 +186,7 @@ class DriverStandingsView extends StatelessWidget {
     return AppBar(
       backgroundColor: Colors.transparent,
       elevation: 0,
-      leading: Image.asset(ImagesString.logoImage),
+      leading: Image.asset(ImagesConstant.logoImage),
       actions: [
         IconButton(
           icon: const Icon(Icons.home_max_outlined),
